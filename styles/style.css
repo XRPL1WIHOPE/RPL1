@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px ;
+  width: 10px;
 }
 
 * {
@@ -27,6 +27,10 @@ a,
 p,
 button {
   cursor: pointer;
+}
+
+span:hover {
+  text-decoration: underline;
 }
 
 .hidden {
@@ -75,6 +79,7 @@ nav.container-navbar {
 .container-navbar .menu-navbar a:hover {
   color: #ffffffbb;
 }
+
 /* navbar end */
 
 
@@ -130,6 +135,7 @@ section#home {
   font-size: 19px;
   margin: 5px 0px;
 }
+
 /* home end */
 
 
@@ -146,7 +152,7 @@ section#galery {
 section#galery h1 {
   font-size: 40px;
   font-family: var(--pop);
-  color: var(--gold);
+  color: #fff;
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
@@ -184,6 +190,7 @@ section#galery h1 {
   background-size: cover;
   background-position: center;
 }
+
 /* galery end */
 
 
@@ -224,15 +231,21 @@ section#about {
   font-family: var(--pop);
   font-size: 18px;
   padding: 10px 0px;
-  
+
 }
+
 /* about end */
 
 
 @media screen and (max-width: 500px) {
+
   /* navbar start */
   .hidden {
     display: block;
+  }
+
+  nav.container-navbar {
+    border: none;
   }
 
   .container-navbar .logo {
@@ -252,6 +265,7 @@ section#about {
     align-items: center;
     overflow: hidden;
     transition: height 1s;
+    border-bottom: 5px solid #fff;
   }
 
   .menu-navbar li {
@@ -261,6 +275,7 @@ section#about {
   .interak {
     height: 200px;
   }
+
   /* navbar end */
 
   /* home start */
@@ -275,6 +290,7 @@ section#about {
   .information h1 {
     font-size: 30px;
   }
+
   /* home end */
 
 
@@ -286,8 +302,9 @@ section#about {
   .container-galery .img {
     height: 200px;
     width: 320px;
-    margin:15px;
+    margin: 50px 15px;
   }
+
   /* galery end */
 
 
@@ -295,8 +312,10 @@ section#about {
   .contain-about {
     padding: 10px;
   }
+
   .contain-about img {
     height: 300px;
   }
+
   /* about end */
 }
