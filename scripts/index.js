@@ -1,5 +1,5 @@
 // global variable start
-const sekolah = 'https://instagram.com/official.smkwiraharapan?igshid=MzRlODBiNWFlZA==';
+const sekolah = 'https://smkwiraharapan.sch.id/ ';
 const grup = 'https://instagram.com/expors.ofc?igshid=MzRlODBiNWFlZA==';
 // global variable end
 

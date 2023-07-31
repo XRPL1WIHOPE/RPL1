@@ -79,7 +79,6 @@ nav.container-navbar {
 .container-navbar .menu-navbar a:hover {
   color: #ffffffbb;
 }
-
 /* navbar end */
 
 
@@ -135,7 +134,6 @@ section#home {
   font-size: 19px;
   margin: 5px 0px;
 }
-
 /* home end */
 
 
@@ -190,7 +188,6 @@ section#galery h1 {
   background-size: cover;
   background-position: center;
 }
-
 /* galery end */
 
 
@@ -233,7 +230,6 @@ section#about {
   padding: 10px 0px;
 
 }
-
 /* about end */
 
 
@@ -275,8 +271,8 @@ section#about {
   .interak {
     height: 200px;
   }
-
   /* navbar end */
+
 
   /* home start */
   section#home {
@@ -304,7 +300,6 @@ section#about {
     width: 320px;
     margin: 50px 15px;
   }
-
   /* galery end */
 
 
@@ -316,6 +311,5 @@ section#about {
   .contain-about img {
     height: 300px;
   }
-
   /* about end */
 }
