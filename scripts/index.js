@@ -1,6 +1,7 @@
 // global variable start
 const sekolah = 'https://smkwiraharapan.sch.id/ ';
 const grup = 'https://instagram.com/expors.ofc?igshid=MzRlODBiNWFlZA==';
+const Pengurus = "./pages/information.html";
 // global variable end
 
 // navbar script start
@@ -12,7 +13,7 @@ button.addEventListener("click", () => {
   button.setAttribute("src", `./assets/components/${nilai === 0 ? "menu" : "x"}.svg`)
   nav_menu.classList.toggle("interak");
 });
-// navbar script endb 
+// navbar script end 
 
 // home start
 document.getElementById("visBtn").addEventListener("click", () => {
@@ -28,4 +29,6 @@ document.getElementById("sekolah").addEventListener("click", () => {
 document.getElementById("groupN").addEventListener("click", () => {
   window.open(`${grup}`)
 })
+
+document.getElementById("pengurus").setAttribute("href", Pengurus)
 // about end

@@ -133,7 +133,7 @@ section#home {
   font-family: var(--pop);
   font-size: 19px;
   margin: 5px 0px;
-}
+} 
 /* home end */
 
 
@@ -228,7 +228,6 @@ section#about {
   font-family: var(--pop);
   font-size: 18px;
   padding: 10px 0px;
-
 }
 /* about end */
 
