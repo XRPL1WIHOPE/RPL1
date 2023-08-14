@@ -18,7 +18,8 @@ button.addEventListener("click", () => {
 });
 
 document.getElementById("game").addEventListener("click", function () {
-  window.open("https://xrpl1wihope.github.io/XRPL1/jump");
+  // window.open("https://xrpl1wihope.github.io/XRPL1/jump");
+  alert("sory, game masih dalam perbaikan bro");
 });
 // navbar script end
 
