@@ -38,13 +38,13 @@ h1#skor {
 }
 @keyframes jump {
   0% {
-    top: 150px;
+    top: 155px;
   }
   50% {
     top: 100px;
   }
   100% {
-    top: 150px;
+    top: 155px;
   }
 }
 #block {
@@ -58,9 +58,9 @@ h1#skor {
 }
 @keyframes block {
   0% {
-    left: 480px;
+    left: 380px;
   }
   100% {
-    left: -40px;
+    left: -10px;
   }
 }
