@@ -17,12 +17,9 @@ button.addEventListener("click", () => {
   nav_menu.classList.toggle("interak");
 });
 
-document.getElementById("game").addEventListener("click", function () {
-  // window.open("https://xrpl1wihope.github.io/XRPL1/jump");
-  alert("sory, game masih dalam perbaikan bro");
-  //window.open("https://xrpl1wihope.github.io/XRPL1/jump");
-  alert("Game Sedang dalam Perbaikan");
-});
+// document.getElementById("game").addEventListener("click", function () {
+//   alert("Game sedang tahap perbaikan..........");
+// });
 // navbar script end
 
 // home start
