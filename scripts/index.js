@@ -18,7 +18,7 @@ button.addEventListener("click", () => {
 });
 
 document.getElementById("game").addEventListener("click", function () {
-  window.open("../jump/index.html");
+  window.open("./jump/index.html");
 });
 // navbar script end
 
