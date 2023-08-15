@@ -1,6 +1,6 @@
 // global variable start
-const sekolah = 'https://smkwiraharapan.sch.id/ ';
-const grup = 'https://instagram.com/expors.ofc?igshid=MzRlODBiNWFlZA==';
+const sekolah = "https://smkwiraharapan.sch.id/ ";
+const grup = "https://instagram.com/expors.ofc?igshid=MzRlODBiNWFlZA==";
 const Pengurus = "./pages/information.html";
 // global variable end
 
@@ -10,10 +10,17 @@ const button = document.getElementById("button-nav");
 const nav_menu = document.getElementById("nav-menu");
 button.addEventListener("click", () => {
   nilai = (nilai + 1) % 2;
-  button.setAttribute("src", `./assets/components/${nilai === 0 ? "menu" : "x"}.svg`)
+  button.setAttribute(
+    "src",
+    `./assets/components/${nilai === 0 ? "menu" : "x"}.svg`
+  );
   nav_menu.classList.toggle("interak");
 });
-// navbar script end 
+
+document.getElementById("game").addEventListener("click", function () {
+  window.open("./game/index.html");
+});
+// navbar script end
 
 // home start
 document.getElementById("visBtn").addEventListener("click", () => {
@@ -24,11 +31,11 @@ document.getElementById("visBtn").addEventListener("click", () => {
 // about start
 document.getElementById("sekolah").addEventListener("click", () => {
   window.open(`${sekolah}`);
-})
+});
 
 document.getElementById("groupN").addEventListener("click", () => {
-  window.open(`${grup}`)
-})
+  window.open(`${grup}`);
+});
 
-document.getElementById("pengurus").setAttribute("href", Pengurus)
+document.getElementById("pengurus").setAttribute("href", Pengurus);
 // about end

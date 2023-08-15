@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Shadows+Into+Light&display=swap");
 
 :root {
   --orange: rgb(203, 101, 38);
@@ -73,7 +73,7 @@ nav.container-navbar {
   font-weight: bold;
   font-size: 17px;
   padding-bottom: 2px;
-  transition: color .5s;
+  transition: color 0.5s;
 }
 
 .container-navbar .menu-navbar a:hover {
@@ -81,7 +81,6 @@ nav.container-navbar {
 }
 
 /* navbar end */
-
 
 /* home start */
 section#home {
@@ -110,7 +109,7 @@ section#home {
   font-family: var(--pop);
 }
 
-.information h1>a {
+.information h1 > a {
   font-family: var(--shd);
   color: var(--colorT);
   font-size: 45px;
@@ -137,7 +136,6 @@ section#home {
 }
 
 /* home end */
-
 
 /* galery start */
 section#galery {
@@ -193,7 +191,6 @@ section#galery h1 {
 
 /* galery end */
 
-
 /* about start */
 section#about {
   display: flex;
@@ -234,9 +231,7 @@ section#about {
 }
 /* about end */
 
-
 @media screen and (max-width: 500px) {
-
   /* navbar start */
   .hidden {
     display: block;
@@ -267,15 +262,14 @@ section#about {
   }
 
   .menu-navbar li {
-    margin: 19px;
+    margin: 16px;
   }
 
   .interak {
-    height: 200px;
+    height: 250px;
   }
 
   /* navbar end */
-
 
   /* home start */
   section#home {
@@ -292,7 +286,6 @@ section#about {
 
   /* home end */
 
-
   /* galery start */
   .container-galery {
     width: 100;
@@ -305,7 +298,6 @@ section#about {
   }
 
   /* galery end */
-
 
   /* about start */
   .contain-about {
