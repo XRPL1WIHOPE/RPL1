@@ -189,6 +189,11 @@ section#galery h1 {
   background-position: center;
 }
 
+.container-galery .s4 {
+  background-image: url("../assets/images/3.jpg");
+  background-size: cover;
+  background-position: 0px 10px;
+}
 /* galery end */
 
 /* about start */
