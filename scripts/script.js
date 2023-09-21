@@ -10,6 +10,7 @@ const button = document.getElementById("button-nav");
 const nav_menu = document.getElementById("nav-menu");
 button.addEventListener("click", () => {
   nilai = (nilai + 1) % 2;
+  console.log("test bang")
   button.setAttribute(
     "src",
     `./assets/components/${nilai === 0 ? "menu" : "x"}.svg`
