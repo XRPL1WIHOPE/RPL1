@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./assets/logo.jpg" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+    <title>X RPl 1</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="icon" href="./assets/logo.jpg">
-  <title>X RPl 1</title>
-</head>
-
-<body>
-  <!-- navbar start -->
-  <nav class="container-navbar">
-    <div class="logo">
-      <h1>X RPL 1</h1>
-      <div class="hidden">
-        <img src="./assets/components/menu.svg" alt="" id="button-nav">
+  <body>
+    <!-- navbar start -->
+    <nav class="container-navbar">
+      <div class="logo">
+        <h1>X RPL 1</h1>
+        <div class="hidden">
+          <img src="./assets/components/menu.svg" alt="" id="button-nav" />
+        </div>
       </div>
-    </div>
-    <ul class="menu-navbar " id="nav-menu">
-      <li>
-        <a href="#home">Home</a>
-      </li>
-      <li>
-        <a href="#galery">Galery</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- navbar end -->
+      <ul class="menu-navbar" id="nav-menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#galery">Galery</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar end -->
 
-  <!-- home start -->
-  <section id="home">
-    <div class="information">
-      <h1 id="btN">EXPORS</h1>
-      <h1>Executive People Of RPL Satu</h1>
-      <p>Angkatan 16</p>
-      <button id="visBtn">Kunjungi Kami</button>
-    </div>
-  </section>
-  <!-- home end -->
-
-  <!-- galery start -->
-  <section id="galery">
-    <div class="container-galery">
-      <h1>Galery</h1>
-      <img class="img s1" src="./assets/images/1.jpg">
-      <img class="img s2" src="./assets/images/2.jpg">
-      <img class="img s3" src="./assets/images/bgi.jpg">
-      <img class="img s4" src="./assets/images/3.jpg">
-    </div>
-  </section>
-  <!-- galery send -->
-
-  <!-- about start -->
-  <section id="about">
-    <div class="contain-about">
-      <img src="./assets/logo.jpg" alt="">
-      <div class="detail">
-        <ul>
-          <li id="sekolah">Sekolah : <span>SMK Wira Harapan</span></li>
-          <li>Angkatan : 16</li>
-          <li id="kelas">Kelas : X RPL 1</li>
-          <li>Anggota Kelas : 32 Siswa</li>
-          <li>Grup : <span id="groupN">RPL Cemara</span></li>
-        </ul>
+    <!-- home start -->
+    <section id="home">
+      <div class="information">
+        <h1 id="btN">EXPORS</h1>
+        <h1>Executive People Of RPL Satu</h1>
+        <p>Angkatan 16</p>
+        <button id="visBtn">Kunjungi Kami</button>
       </div>
-    </div>
-  </section>
-  <!-- about end -->
-  <script src="./scripts/script.js"></script>
-</body>
+    </section>
+    <!-- home end -->
 
+    <!-- galery start -->
+    <section id="galery">
+      <div class="container-galery">
+        <h1>Galery</h1>
+        <img class="img s1" src="./assets/images/1.jpg" />
+        <img class="img s2" src="./assets/images/2.jpg" />
+        <img class="img s3" src="./assets/images/bgi.jpg" />
+        <img class="img s4" src="./assets/images/3.jpg" />
+        <img class="img s5" src="./assets/images/4.jpg" alt="" />
+      </div>
+    </section>
+    <!-- galery send -->
+
+    <!-- about start -->
+    <section id="about">
+      <div class="contain-about">
+        <img src="./assets/logo.jpg" alt="" class="logoExs" />
+        <div class="detail">
+          <ul>
+            <li id="sekolah">Sekolah : <span>SMK Wira Harapan</span></li>
+            <li>Angkatan : 16</li>
+            <li id="kelas">Kelas : X RPL 1</li>
+            <li>Anggota Kelas : 32 Siswa</li>
+            <li>Grup : <span id="groupN">RPL Cemara</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/parallax.js"></script>
+  </body>
 </html>

@@ -48,6 +48,7 @@ nav.container-navbar {
   align-items: center;
   background-color: rgb(203, 101, 38);
   border-bottom: #fff solid 4px;
+  z-index: 9999;
 }
 
 .container-navbar .logo {
@@ -88,12 +89,14 @@ section#home {
   height: 100vh;
   background-image: url("../assets/images/bgi.jpg");
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .information {
   padding: 100px 70px;
+  transform: translate(-100%);
 }
 
 .information h1#btN {
@@ -161,6 +164,7 @@ section#galery h1 {
   border: 5px solid #fff;
   margin: 20px 30px;
   border-radius: 10px;
+  transform: scale(.1);
 }
 
 .container-galery {
@@ -200,9 +204,10 @@ section#about {
   box-shadow: black 30px 30px 50px;
 }
 
-.contain-about img {
+.contain-about .logoExs {
   border-radius: 20px;
   border: 5px solid #fff;
+  transform: scale(.1);
 }
 
 .contain-about .detail {
