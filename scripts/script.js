@@ -1,38 +1,87 @@
-// global variable start
-const sekolah = "https://smkwiraharapan.sch.id/ ";
-const grup = "https://instagram.com/expors.ofc?igshid=MzRlODBiNWFlZA==";
-const Pengurus = "./pages/information.html";
-// global variable end
+const scrollValue = $(this).scrollTop();
+const tinggiDokumen = $(document).height();
+const tinggiJendela = $(window).height();
 
-// navbar script start
-let nilai = 0;
-const button = document.getElementById("button-nav");
-const nav_menu = document.getElementById("nav-menu");
-button.addEventListener("click", () => {
-  nilai = (nilai + 1) % 2;
-  console.log("test bang")
-  button.setAttribute(
-    "src",
-    `./assets/components/${nilai === 0 ? "menu" : "x"}.svg`
-  );
-  nav_menu.classList.toggle("interak");
+const persScroll = (scrollValue / (tinggiDokumen - tinggiJendela)) * 100;
+
+// navbar start
+const nav = $(".container-nav");
+const cNavbar = $(".container-navigation-bar");
+
+$(".show").click(function () {
+  nav.css({
+    transform: "translate(0%)",
+  });
+  cNavbar.css({
+    transform: "translateY(-100%)",
+  });
+  $(".f-container-body").css({
+    filter: "blur(6px)"
+  });
 });
-// navbar script end
+
+$(".hide").click(function () {
+  nav.css({
+    transform: "translate(-110%)",
+  });
+  cNavbar.css({
+    transform: "translateY(0%)",
+  });
+  $(".f-container-body").css({
+    filter: "blur(0px)"
+  });
+});
+
+// navbar end
 
 // home start
-document.getElementById("visBtn").addEventListener("click", () => {
-  window.open(`${grup}`);
+$(document).ready(function () {
+  $(".container-contain-home").css({
+    transform: "scale(1)",
+  });
 });
 // home end
 
-// about start
-document.getElementById("sekolah").addEventListener("click", () => {
-  window.open(`${sekolah}`);
+// gallery start
+const img = $(".slider-img");
+let counter = 1;
+const J = 5;
+$(".left").click(function () {
+  counter = counter - 1;
+  if (counter < 1) {
+    counter = J;
+  }
+  img.attr("src", `./assets/images/${counter}.jpg`);
 });
 
-document.getElementById("groupN").addEventListener("click", () => {
-  window.open(`${grup}`);
+$(".right").click(function () {
+  counter = counter + 1;
+  if (counter > J) {
+    counter = 1;
+  }
+  img.attr("src", `./assets/images/${counter}.jpg`);
 });
+// gallery end
 
-document.getElementById("pengurus").setAttribute("href", Pengurus);
-// about end
+$(document).scroll(function () {
+  const scrollValue = $(this).scrollTop();
+  const tinggiDokumen = $(document).height();
+  const tinggiJendela = $(window).height();
+
+  const persScroll = (scrollValue / (tinggiDokumen - tinggiJendela)) * 100;
+  console.log(persScroll);
+  //navbar start
+  if (persScroll >= 1) {
+    $(".container-navigation-bar").css({
+      borderBottom: "1px solid #fff",
+    });
+  } else {
+    $(".container-navigation-bar").css({
+      borderBottom: "1px solid rgba(255, 255, 255, 0)",
+    });
+  }
+  //navbar start
+
+  // information start
+  // information end
+});
