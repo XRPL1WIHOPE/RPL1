@@ -4,6 +4,8 @@ const tinggiJendela = $(window).height();
 
 const persScroll = (scrollValue / (tinggiDokumen - tinggiJendela)) * 100;
 
+// parallax effect
+
 // navbar start
 const nav = $(".container-nav");
 const cNavbar = $(".container-navigation-bar");
@@ -16,7 +18,7 @@ $(".show").click(function () {
     transform: "translateY(-100%)",
   });
   $(".f-container-body").css({
-    filter: "blur(6px)"
+    filter: "blur(6px)",
   });
 });
 
@@ -28,7 +30,7 @@ $(".hide").click(function () {
     transform: "translateY(0%)",
   });
   $(".f-container-body").css({
-    filter: "blur(0px)"
+    filter: "blur(0px)",
   });
 });
 
@@ -69,7 +71,7 @@ $(document).scroll(function () {
   const tinggiJendela = $(window).height();
 
   const persScroll = (scrollValue / (tinggiDokumen - tinggiJendela)) * 100;
-  console.log(persScroll);
+  // console.log(persScroll);
   //navbar start
   if (persScroll >= 1) {
     $(".container-navigation-bar").css({
@@ -80,6 +82,11 @@ $(document).scroll(function () {
       borderBottom: "1px solid rgba(255, 255, 255, 0)",
     });
   }
+  persScroll < 21
+    ? $(".container-navigation-bar").css({ backgroundColor: "#ffffff00" })
+    : $(".container-navigation-bar").css({
+        backgroundColor: "rgba(0,0,0,0.8)",
+      });
   //navbar start
 
   // information start
